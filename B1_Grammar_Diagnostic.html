@@ -1,0 +1,1249 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>B1 Grammar Diagnostic — Detailed Feedback</title>
+
+<style>
+
+    body {
+        font-family: Arial, sans-serif;
+        background: #f4f6f8;
+        margin: 0;
+        padding: 30px 15px;
+        color: #222;
+    }
+
+    .container {
+        max-width: 900px;
+        margin: auto;
+    }
+
+    h1 {
+        text-align: center;
+        margin-bottom: 8px;
+    }
+
+    .subtitle {
+        text-align: center;
+        color: #666;
+        margin-bottom: 30px;
+    }
+
+    .question {
+        background: white;
+        padding: 22px;
+        margin-bottom: 20px;
+        border-radius: 12px;
+        box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+    }
+
+    .question h3 {
+        margin-top: 0;
+    }
+
+    label {
+        display: block;
+        padding: 10px 12px;
+        margin: 7px 0;
+        border-radius: 8px;
+        cursor: pointer;
+        background: #f7f7f7;
+    }
+
+    label:hover {
+        background: #eef2f5;
+    }
+
+    /* Correct answer */
+    .correct {
+        background: #e5f6e9 !important;
+        border-left: 5px solid #2e8b57;
+    }
+
+    /* Wrong selected answer */
+    .incorrect {
+        background: #fdeaea !important;
+        border-left: 5px solid #c0392b;
+    }
+
+    /* Explanation box */
+
+    .explanation {
+        display: none;
+        margin-top: 18px;
+        padding: 18px;
+        background: #f8fafc;
+        border-radius: 10px;
+        line-height: 1.6;
+    }
+
+    .explanation.show {
+        display: block;
+    }
+
+    .explanation h4 {
+        margin-bottom: 8px;
+    }
+
+    .option-explanation {
+        margin: 7px 0;
+    }
+
+    .buttons {
+        text-align: center;
+        margin: 30px 0;
+    }
+
+    button {
+        padding: 12px 22px;
+        border: none;
+        border-radius: 8px;
+        cursor: pointer;
+        font-size: 16px;
+        margin: 5px;
+    }
+
+    #checkBtn {
+        background: #2d6cdf;
+        color: white;
+    }
+
+    #resetBtn {
+        background: #777;
+        color: white;
+    }
+
+    button:hover {
+        opacity: 0.9;
+    }
+
+    #result {
+        display: none;
+        background: white;
+        padding: 20px;
+        border-radius: 12px;
+        text-align: center;
+        margin-bottom: 25px;
+        font-size: 18px;
+        box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+    }
+
+    .score-good {
+        color: #238636;
+    }
+
+    .score-mid {
+        color: #b7791f;
+    }
+
+    .score-low {
+        color: #c0392b;
+    }
+
+</style>
+</head>
+
+
+<body>
+
+<div class="container">
+
+    <h1>B1 Grammar Diagnostic</h1>
+
+    <p class="subtitle">
+        Part 1 — Grammar & Language Control
+    </p>
+
+
+    <!-- SCORE RESULT -->
+
+    <div id="result"></div>
+
+
+    <form id="quiz">
+
+
+        <!-- QUESTION 1 -->
+
+        <div class="question">
+
+            <h3>
+                1. I ___ English for about two years.
+            </h3>
+
+            <label>
+                <input type="radio" name="q1" value="A">
+                A. study
+            </label>
+
+            <label>
+                <input type="radio" name="q1" value="B">
+                B. have studied
+            </label>
+
+            <label>
+                <input type="radio" name="q1" value="C">
+                C. am studying
+            </label>
+
+            <label>
+                <input type="radio" name="q1" value="D">
+                D. studied
+            </label>
+
+
+            <div class="explanation" id="exp1">
+
+                <h4>
+                    ✅ Correct answer: B — have studied
+                </h4>
+
+                <p>
+                    <strong>Why?</strong>
+                    We use the <strong>Present Perfect</strong>
+                    with <strong>for + a period of time</strong>
+                    when an activity started in the past and continues
+                    up to the present.
+                </p>
+
+                <p class="option-explanation">
+                    <strong>A — study ❌</strong>
+                    Simple Present describes habits or general facts.
+                    It does not normally express an activity continuing
+                    from the past.
+                </p>
+
+                <p class="option-explanation">
+                    <strong>B — have studied ✅</strong>
+                    Present Perfect connects the past with the present.
+                </p>
+
+                <p class="option-explanation">
+                    <strong>C — am studying ❌</strong>
+                    Present Continuous focuses on something happening
+                    around now, rather than the duration from the past.
+                </p>
+
+                <p class="option-explanation">
+                    <strong>D — studied ❌</strong>
+                    Simple Past normally refers to a finished past period.
+                </p>
+
+                <p>
+                    <strong>Key point:</strong>
+                    <em>have/has + past participle</em>
+                    is the basic Present Perfect structure.
+                </p>
+
+            </div>
+
+        </div>
+
+
+
+        <!-- QUESTION 2 -->
+
+        <div class="question">
+
+            <h3>
+                2. She ___ to the gym three times this week.
+            </h3>
+
+            <label>
+                <input type="radio" name="q2" value="A">
+                A. goes
+            </label>
+
+            <label>
+                <input type="radio" name="q2" value="B">
+                B. went
+            </label>
+
+            <label>
+                <input type="radio" name="q2" value="C">
+                C. has been
+            </label>
+
+            <label>
+                <input type="radio" name="q2" value="D">
+                D. is going
+            </label>
+
+
+            <div class="explanation" id="exp2">
+
+                <h4>
+                    ✅ Correct answer: C — has been
+                </h4>
+
+                <p>
+                    <strong>Why?</strong>
+                    <em>This week</em> is an unfinished time period.
+                    Present Perfect is appropriate when something has
+                    happened during a period that is still continuing.
+                </p>
+
+                <p class="option-explanation">
+                    <strong>A — goes ❌</strong>
+                    Simple Present usually describes routines or habits,
+                    not the number of completed visits during this week.
+                </p>
+
+                <p class="option-explanation">
+                    <strong>B — went ❌</strong>
+                    Simple Past is more natural with a finished time
+                    period such as <em>last week</em>.
+                </p>
+
+                <p class="option-explanation">
+                    <strong>C — has been ✅</strong>
+                    This means she has visited the gym three times
+                    so far this week.
+                </p>
+
+                <p class="option-explanation">
+                    <strong>D — is going ❌</strong>
+                    Present Continuous normally describes something
+                    happening now or a temporary arrangement.
+                </p>
+
+                <p>
+                    <strong>Key point:</strong>
+                    Expressions such as
+                    <em>this week, today, this month</em>
+                    often work with Present Perfect.
+                </p>
+
+            </div>
+
+        </div>
+
+
+
+        <!-- QUESTION 3 -->
+
+        <div class="question">
+
+            <h3>
+                3. When I arrived home, my brother ___ dinner.
+            </h3>
+
+            <label>
+                <input type="radio" name="q3" value="A">
+                A. was cooking
+            </label>
+
+            <label>
+                <input type="radio" name="q3" value="B">
+                B. cooks
+            </label>
+
+            <label>
+                <input type="radio" name="q3" value="C">
+                C. has cooked
+            </label>
+
+            <label>
+                <input type="radio" name="q3" value="D">
+                D. will cook
+            </label>
+
+
+            <div class="explanation" id="exp3">
+
+                <h4>
+                    ✅ Correct answer: A — was cooking
+                </h4>
+
+                <p>
+                    <strong>Why?</strong>
+                    The cooking was already in progress when
+                    another past event happened:
+                    <em>I arrived home.</em>
+                </p>
+
+                <p class="option-explanation">
+                    <strong>A — was cooking ✅</strong>
+                    Past Continuous shows an action that was in progress
+                    at a particular moment in the past.
+                </p>
+
+                <p class="option-explanation">
+                    <strong>B — cooks ❌</strong>
+                    Simple Present does not fit this past-time context.
+                </p>
+
+                <p class="option-explanation">
+                    <strong>C — has cooked ❌</strong>
+                    Present Perfect does not normally fit a sentence
+                    containing a specific past event.
+                </p>
+
+                <p class="option-explanation">
+                    <strong>D — will cook ❌</strong>
+                    Future meaning does not fit the past context.
+                </p>
+
+                <p>
+                    <strong>Key point:</strong>
+                    A common pattern is:
+                    <em>When + Simple Past + Past Continuous.</em>
+                </p>
+
+            </div>
+
+        </div>
+
+
+
+        <!-- QUESTION 4 -->
+
+        <div class="question">
+
+            <h3>
+                4. If I have enough money, I ___ a new laptop.
+            </h3>
+
+            <label>
+                <input type="radio" name="q4" value="A">
+                A. bought
+            </label>
+
+            <label>
+                <input type="radio" name="q4" value="B">
+                B. will buy
+            </label>
+
+            <label>
+                <input type="radio" name="q4" value="C">
+                C. would buy
+            </label>
+
+            <label>
+                <input type="radio" name="q4" value="D">
+                D. have bought
+            </label>
+
+
+            <div class="explanation" id="exp4">
+
+                <h4>
+                    ✅ Correct answer: B — will buy
+                </h4>
+
+                <p>
+                    <strong>Why?</strong>
+                    This is the <strong>First Conditional</strong>,
+                    used for a real or possible future situation.
+                </p>
+
+                <p class="option-explanation">
+                    <strong>A — bought ❌</strong>
+                    Simple Past does not form the normal First Conditional
+                    pattern here.
+                </p>
+
+                <p class="option-explanation">
+                    <strong>B — will buy ✅</strong>
+                    The structure is:
+                    <em>If + Present Simple, will + base verb.</em>
+                </p>
+
+                <p class="option-explanation">
+                    <strong>C — would buy ❌</strong>
+                    <em>Would</em> is normally associated with the
+                    Second Conditional for hypothetical situations.
+                </p>
+
+                <p class="option-explanation">
+                    <strong>D — have bought ❌</strong>
+                    Present Perfect does not express the expected
+                    future result here.
+                </p>
+
+            </div>
+
+        </div>
+
+
+
+        <!-- QUESTION 5 -->
+
+        <div class="question">
+
+            <h3>
+                5. You ___ wear a uniform at this school.
+                It's optional.
+            </h3>
+
+            <label>
+                <input type="radio" name="q5" value="A">
+                A. mustn't
+            </label>
+
+            <label>
+                <input type="radio" name="q5" value="B">
+                B. shouldn't
+            </label>
+
+            <label>
+                <input type="radio" name="q5" value="C">
+                C. don't have to
+            </label>
+
+            <label>
+                <input type="radio" name="q5" value="D">
+                D. can't
+            </label>
+
+
+            <div class="explanation" id="exp5">
+
+                <h4>
+                    ✅ Correct answer: C — don't have to
+                </h4>
+
+                <p>
+                    <strong>Why?</strong>
+                    <em>Don't have to</em> means there is
+                    <strong>no obligation</strong>.
+                    The sentence says wearing a uniform is optional.
+                </p>
+
+                <p class="option-explanation">
+                    <strong>A — mustn't ❌</strong>
+                    Means something is prohibited.
+                </p>
+
+                <p class="option-explanation">
+                    <strong>B — shouldn't ❌</strong>
+                    Means something is not advisable or recommended.
+                </p>
+
+                <p class="option-explanation">
+                    <strong>C — don't have to ✅</strong>
+                    Means something is not necessary.
+                </p>
+
+                <p class="option-explanation">
+                    <strong>D — can't ❌</strong>
+                    Usually expresses inability or lack of permission.
+                </p>
+
+                <p>
+                    <strong>Important distinction:</strong>
+                    <em>mustn't = prohibited</em>
+                    vs.
+                    <em>don't have to = not necessary.</em>
+                </p>
+
+            </div>
+
+        </div>
+
+
+
+        <!-- QUESTION 6 -->
+
+        <div class="question">
+
+            <h3>
+                6. This book ___ by millions of people every year.
+            </h3>
+
+            <label>
+                <input type="radio" name="q6" value="A">
+                A. is read
+            </label>
+
+            <label>
+                <input type="radio" name="q6" value="B">
+                B. reads
+            </label>
+
+            <label>
+                <input type="radio" name="q6" value="C">
+                C. was reading
+            </label>
+
+            <label>
+                <input type="radio" name="q6" value="D">
+                D. has read
+            </label>
+
+
+            <div class="explanation" id="exp6">
+
+                <h4>
+                    ✅ Correct answer: A — is read
+                </h4>
+
+                <p>
+                    <strong>Why?</strong>
+                    The book receives the action:
+                    people read the book.
+                    Therefore we need the
+                    <strong>Passive Voice</strong>.
+                </p>
+
+                <p class="option-explanation">
+                    <strong>A — is read ✅</strong>
+                    Present Simple Passive =
+                    <em>is + past participle.</em>
+                </p>
+
+                <p class="option-explanation">
+                    <strong>B — reads ❌</strong>
+                    This would make the book the performer of the action.
+                </p>
+
+                <p class="option-explanation">
+                    <strong>C — was reading ❌</strong>
+                    Past Continuous does not fit the general statement
+                    <em>every year</em>.
+                </p>
+
+                <p class="option-explanation">
+                    <strong>D — has read ❌</strong>
+                    This is Active Voice and would make the book
+                    the reader.
+                </p>
+
+            </div>
+
+        </div>
+
+
+
+        <!-- QUESTION 7 -->
+
+        <div class="question">
+
+            <h3>
+                7. I enjoy ___ English with my friends.
+            </h3>
+
+            <label>
+                <input type="radio" name="q7" value="A">
+                A. speak
+            </label>
+
+            <label>
+                <input type="radio" name="q7" value="B">
+                B. to speak
+            </label>
+
+            <label>
+                <input type="radio" name="q7" value="C">
+                C. spoke
+            </label>
+
+            <label>
+                <input type="radio" name="q7" value="D">
+                D. speaking
+            </label>
+
+
+            <div class="explanation" id="exp7">
+
+                <h4>
+                    ✅ Correct answer: D — speaking
+                </h4>
+
+                <p>
+                    <strong>Why?</strong>
+                    The verb <strong>enjoy</strong> is followed by
+                    a <strong>gerund (-ing form)</strong>.
+                </p>
+
+                <p class="option-explanation">
+                    <strong>A — speak ❌</strong>
+                    The base form cannot directly follow
+                    <em>enjoy</em>.
+                </p>
+
+                <p class="option-explanation">
+                    <strong>B — to speak ❌</strong>
+                    <em>Enjoy</em> is not normally followed by
+                    <em>to + verb</em>.
+                </p>
+
+                <p class="option-explanation">
+                    <strong>C — spoke ❌</strong>
+                    Simple Past cannot function as the complement
+                    of <em>enjoy</em>.
+                </p>
+
+                <p class="option-explanation">
+                    <strong>D — speaking ✅</strong>
+                    <em>enjoy + verb-ing</em> is the standard structure.
+                </p>
+
+                <p>
+                    <strong>Useful pattern:</strong>
+                    <em>enjoy, avoid, finish, mind + verb-ing</em>
+                </p>
+
+            </div>
+
+        </div>
+
+
+
+        <!-- QUESTION 8 -->
+
+        <div class="question">
+
+            <h3>
+                8. I've never ___ such an interesting film before.
+            </h3>
+
+            <label>
+                <input type="radio" name="q8" value="A">
+                A. see
+            </label>
+
+            <label>
+                <input type="radio" name="q8" value="B">
+                B. seen
+            </label>
+
+            <label>
+                <input type="radio" name="q8" value="C">
+                C. saw
+            </label>
+
+            <label>
+                <input type="radio" name="q8" value="D">
+                D. seeing
+            </label>
+
+
+            <div class="explanation" id="exp8">
+
+                <h4>
+                    ✅ Correct answer: B — seen
+                </h4>
+
+                <p>
+                    <strong>Why?</strong>
+                    The sentence uses Present Perfect:
+                    <em>have/has + past participle.</em>
+                    The past participle of <em>see</em> is
+                    <strong>seen</strong>.
+                </p>
+
+                <p class="option-explanation">
+                    <strong>A — see ❌</strong>
+                    Base form cannot follow <em>I've</em>
+                    in Present Perfect.
+                </p>
+
+                <p class="option-explanation">
+                    <strong>B — seen ✅</strong>
+                    <em>I've never seen...</em>
+                    is grammatically correct.
+                </p>
+
+                <p class="option-explanation">
+                    <strong>C — saw ❌</strong>
+                    <em>Saw</em> is Simple Past, not the past participle.
+                </p>
+
+                <p class="option-explanation">
+                    <strong>D — seeing ❌</strong>
+                    The -ing form cannot follow <em>I've</em>
+                    in this structure.
+                </p>
+
+            </div>
+
+        </div>
+
+
+
+        <!-- QUESTION 9 -->
+
+        <div class="question">
+
+            <h3>
+                9. My teacher asked me ___ I understood the question.
+            </h3>
+
+            <label>
+                <input type="radio" name="q9" value="A">
+                A. what
+            </label>
+
+            <label>
+                <input type="radio" name="q9" value="B">
+                B. why
+            </label>
+
+            <label>
+                <input type="radio" name="q9" value="C">
+                C. if
+            </label>
+
+            <label>
+                <input type="radio" name="q9" value="D">
+                D. which
+            </label>
+
+
+            <div class="explanation" id="exp9">
+
+                <h4>
+                    ✅ Correct answer: C — if
+                </h4>
+
+                <p>
+                    <strong>Why?</strong>
+                    The original question is essentially:
+                    <em>"Do you understand the question?"</em>
+                    This is a Yes/No question.
+                    Therefore an indirect question can use
+                    <strong>if</strong> or <em>whether</em>.
+                </p>
+
+                <p class="option-explanation">
+                    <strong>A — what ❌</strong>
+                    <em>What</em> asks for information about a thing
+                    or action.
+                </p>
+
+                <p class="option-explanation">
+                    <strong>B — why ❌</strong>
+                    <em>Why</em> asks for a reason.
+                </p>
+
+                <p class="option-explanation">
+                    <strong>C — if ✅</strong>
+                    Correctly introduces a Yes/No indirect question.
+                </p>
+
+                <p class="option-explanation">
+                    <strong>D — which ❌</strong>
+                    <em>Which</em> normally requires a choice
+                    between specific alternatives.
+                </p>
+
+            </div>
+
+        </div>
+
+
+
+        <!-- QUESTION 10 -->
+
+        <div class="question">
+
+            <h3>
+                10. I wish I ___ more free time.
+            </h3>
+
+            <label>
+                <input type="radio" name="q10" value="A">
+                A. had
+            </label>
+
+            <label>
+                <input type="radio" name="q10" value="B">
+                B. have
+            </label>
+
+            <label>
+                <input type="radio" name="q10" value="C">
+                C. will have
+            </label>
+
+            <label>
+                <input type="radio" name="q10" value="D">
+                D. would have
+            </label>
+
+
+            <div class="explanation" id="exp10">
+
+                <h4>
+                    ✅ Correct answer: A — had
+                </h4>
+
+                <p>
+                    <strong>Why?</strong>
+                    <em>Wish + Past Simple</em> is used to talk
+                    about a present situation that is different
+                    from what we want.
+                </p>
+
+                <p class="option-explanation">
+                    <strong>A — had ✅</strong>
+                    <em>I wish I had more free time</em> means
+                    I don't have enough free time now and I want
+                    the situation to be different.
+                </p>
+
+                <p class="option-explanation">
+                    <strong>B — have ❌</strong>
+                    Present Simple is not the normal form after
+                    <em>wish</em> for an unreal present situation.
+                </p>
+
+                <p class="option-explanation">
+                    <strong>C — will have ❌</strong>
+                    This does not express the standard
+                    unreal-present meaning.
+                </p>
+
+                <p class="option-explanation">
+                    <strong>D — would have ❌</strong>
+                    <em>Wish + would</em> is generally used for
+                    complaints or desired changes, rather than
+                    simply describing something we want to possess now.
+                </p>
+
+                <p>
+                    <strong>Key point:</strong>
+                    <em>I wish I had...</em>
+                    = I don't have it now, but I want the present
+                    situation to be different.
+                </p>
+
+            </div>
+
+        </div>
+
+
+
+        <!-- BUTTONS -->
+
+        <div class="buttons">
+
+            <button
+                type="button"
+                id="checkBtn"
+                onclick="checkAnswers()">
+
+                Check Answers
+
+            </button>
+
+
+            <button
+                type="button"
+                id="resetBtn"
+                onclick="resetQuiz()">
+
+                Reset
+
+            </button>
+
+        </div>
+
+
+    </form>
+
+</div>
+
+
+
+<script>
+
+/* ==========================================
+   ANSWER KEY
+========================================== */
+
+const answers = {
+
+    q1: "B",
+    q2: "C",
+    q3: "A",
+    q4: "B",
+    q5: "C",
+    q6: "A",
+    q7: "D",
+    q8: "B",
+    q9: "C",
+    q10: "A"
+
+};
+
+
+
+/* ==========================================
+   CHECK ANSWERS
+========================================== */
+
+function checkAnswers() {
+
+    let score = 0;
+
+    let answered = 0;
+
+
+    Object.keys(answers).forEach((q, index) => {
+
+        const selected =
+            document.querySelector(
+                'input[name="' + q + '"]:checked'
+            );
+
+
+        const inputs =
+            document.querySelectorAll(
+                'input[name="' + q + '"]'
+            );
+
+
+        /*
+            Remove previous colours
+        */
+
+        inputs.forEach(input => {
+
+            input.parentElement.classList.remove(
+                "correct",
+                "incorrect"
+            );
+
+        });
+
+
+        /*
+            Show explanation
+        */
+
+        const explanation =
+            document.getElementById(
+                "exp" + (index + 1)
+            );
+
+        explanation.classList.add("show");
+
+
+        /*
+            User answered
+        */
+
+        if (selected) {
+
+            answered++;
+
+
+            /*
+                Correct answer
+            */
+
+            if (
+                selected.value ===
+                answers[q]
+            ) {
+
+                score++;
+
+                selected.parentElement.classList.add(
+                    "correct"
+                );
+
+            }
+
+
+            /*
+                Wrong answer
+            */
+
+            else {
+
+                selected.parentElement.classList.add(
+                    "incorrect"
+                );
+
+
+                /*
+                    Highlight correct answer
+                */
+
+                inputs.forEach(input => {
+
+                    if (
+                        input.value ===
+                        answers[q]
+                    ) {
+
+                        input.parentElement.classList.add(
+                            "correct"
+                        );
+
+                    }
+
+                });
+
+            }
+
+        }
+
+
+        /*
+            If no answer was selected,
+            highlight correct answer
+        */
+
+        else {
+
+            inputs.forEach(input => {
+
+                if (
+                    input.value ===
+                    answers[q]
+                ) {
+
+                    input.parentElement.classList.add(
+                        "correct"
+                    );
+
+                }
+
+            });
+
+        }
+
+    });
+
+
+
+    /* ==========================================
+       SCORE MESSAGE
+    ========================================== */
+
+    const result =
+        document.getElementById("result");
+
+
+    result.style.display = "block";
+
+
+    let message = "";
+
+    let className = "";
+
+
+    if (score >= 8) {
+
+        message =
+            "Strong performance for this B1 grammar diagnostic.";
+
+        className =
+            "score-good";
+
+    }
+
+    else if (score >= 6) {
+
+        message =
+            "Developing B1 performance. Some grammar areas need review.";
+
+        className =
+            "score-mid";
+
+    }
+
+    else {
+
+        message =
+            "Several core grammar areas need further practice.";
+
+        className =
+            "score-low";
+
+    }
+
+
+    result.innerHTML =
+
+        "<strong>Score: " +
+        score +
+        " / 10</strong>" +
+
+        "<br>" +
+
+        "Answered: " +
+        answered +
+        " / 10" +
+
+        "<br><br>" +
+
+        "<span class='" +
+        className +
+        "'>" +
+        message +
+        "</span>";
+
+}
+
+
+
+/* ==========================================
+   RESET
+========================================== */
+
+function resetQuiz() {
+
+    /*
+        Reset radio buttons
+    */
+
+    document
+        .getElementById("quiz")
+        .reset();
+
+
+    /*
+        Remove answer colours
+    */
+
+    document
+        .querySelectorAll("label")
+        .forEach(label => {
+
+            label.classList.remove(
+                "correct",
+                "incorrect"
+            );
+
+        });
+
+
+    /*
+        Hide explanations
+    */
+
+    document
+        .querySelectorAll(".explanation")
+        .forEach(exp => {
+
+            exp.classList.remove("show");
+
+        });
+
+
+    /*
+        Hide score
+    */
+
+    const result =
+        document.getElementById("result");
+
+
+    result.style.display = "none";
+
+    result.innerHTML = "";
+
+}
+
+</script>
+
+</body>
+</html>
